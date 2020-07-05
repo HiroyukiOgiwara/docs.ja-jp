@@ -78,15 +78,15 @@ Null 許容の `Boolean` 変数をブール式で使用すると、結果は `Tr
 |`False`|`True`|`False`|`True`|
 |`False`|`False`|`False`|`False`|
 
-ブール型の変数または式の値が `Nothing` の場合は、`true` でも `false` でもありません。 例を次に示します。
+ブール型の変数または式の値が `Nothing` の場合は、`True` でも `False` でもありません。 例を次に示します。
 
 [!code-vb[VbVbalrNullableValue#6](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrNullableValue/VB/Class1.vb#6)]
 
 この例では、`b1 And b2` は `Nothing` と評価されます。 その結果、各 `If` ステートメントでは `Else` 句が実行され、出力は次のようになります。
 
-`Expression is not true`
+`Expression is not True`
 
-`Expression is not false`
+`Expression is not False`
 
 > [!NOTE]
 > ショートサーキット評価を使用する `AndAlso` および `OrElse` では、最初が `Nothing` と評価されたときに、2 番目のオペランドを評価する必要があります。
